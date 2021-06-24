@@ -1,0 +1,45 @@
+.conteiner {
+	width: 1500px;
+	margin: 0 auto;
+}
+.form{
+	margin-left: auto;
+	margin-right: auto;
+	border-color: darkblue;
+	height: 500px;
+	width: 1100px;
+	box-shadow: 1px 1px 5px 1px gray;
+}
+.photo{
+	margin-top: 20px;
+	margin-left: 200px;
+	margin-bottom: 20px;
+}
+.nav{
+	display: flex;
+}
+.text{
+	margin-top: 32px;
+	margin-left: 20px;
+	font-size: 20px;
+	font-family: 'Noto Sans JP';
+}
+.form-control{
+	width: 400px !important;
+}
+.label{
+	margin-top: 5px;
+}
+.group-items{
+	padding-top: 15px;
+	margin-left: 170px;
+}
+.buttons{
+	padding-top: 55px;
+	margin-left: 255px;
+}
+
+.form-in{
+	width: 800px;
+	margin: 0 auto;
+}

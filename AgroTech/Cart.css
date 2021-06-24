@@ -1,0 +1,32 @@
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgba(133, 133, 133, 0.2);
+    display: flex;
+    
+}
+
+.Cart{
+    text-align: center;
+}
+#name{
+    border-radius: 10px;
+}
+#phone{
+    border-radius: 10px;
+}
+#amount{
+    border-radius: 10px;
+}
+#addres{
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.Authorization{
+    width: 750px;
+}
+.Buy{
+    border-radius: 10px;
+}

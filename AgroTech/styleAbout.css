@@ -1,0 +1,36 @@
+body{
+    background:url(/images/AboutIMG.jpg) no-repeat center center fixed;
+    background-size: cover; 
+}
+.header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.container{
+    align-items: center;
+    font-size: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.About_text{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+    background-color: rgba(214, 214, 214, 0.1);
+    padding: 30px 50px 30px 50px;
+}
+.text{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+.AgroTech_text{
+    font-family: 'Lato', sans-serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0);
+}
