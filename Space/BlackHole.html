@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="Space">Space</div>
+
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a class="nav_link" href="MainPage.html">Main Page</a></li>
+                        <li><a class="nav_link" href="Comets.html">Comets</a></li>
+                        <li><a class="nav_link" href="Galaxy.html">Galaxy</a></li>
+                        <li><a class="nav_link" href="SpaceShips.html">Space Ships</a></li>
+                        <li><a class="nav_link" href="Stars.html">Stars</a></li>
+                    </ul>             
+                </nav>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_title">Space News</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="Img">
+        <img id="fImg" onmouseover="setNewSize()"
+        onmouseout="setOldImage()" src="imeges/Black Hole/black-holes-infographic-v2.jpg" alt="">
+    </div>
+    <button id="Get">Get Version</button>
+
+    <div class="radio">
+        <div>
+            <input type="radio" id="contactChoice1" name="contact" value="FirstImage">
+            <label for="contactChoice1">First Image</label>
+  
+            <input type="radio" id="contactChoice2" name="contact" value="SecondImage">
+            <label for="contactChoice2">Second Image</label>
+  
+            <input type="radio" id="contactChoice3" name="contact" value="ThirdImage">
+            <label for="contactChoice3">Third Image</label>
+  
+            <input type="radio" id="contactChoice4" name="contact" value="FourthImage">
+            <label for="contactChoice3">Fourth Image</label>
+  
+            <input type="radio" id="contactChoice5" name="contact" value="FifthImage">
+            <label for="contactChoice3">Fifth Image</label>
+          </div>
+          <div>
+            <button id="SubmitId" type="submit">Submit</button>
+          </div>
+    </div>
+      
+      <pre id="log">
+      </pre>
+
+      <div class="calculator">
+        <input id="num1" />
+        <div id="operator_btns">
+            <button id="plus" class="operator" onclick="op='+'">+</button>
+            <button id="minus" class="operator" onclick="op='-'">-</button>
+            <button id="times" class="operator" onclick="op='*'">x</button>
+            <button id="divide" class="operator" onclick="op='/'">:</button>
+          </div>
+          
+          <input id="num2" />
+          
+          <button onclick="func()">=</button>
+          
+          <p id="result"></p>
+      </div>
+
+      <select id="Select" class="Select" onchange="Select(value)">
+        <option value="MainPage.html">Main Page</option>
+        <option value="Comets.html">Comets</option>
+        <option value="Galaxy.html">Galaxy</option>
+        <option value="SpaceShips.html">Space Ships</option>
+        <option value="Stars.html">Stars</option>
+    </select>
+
+    <select id="Language" class="Language" onchange="Language(value)">
+        <option value="BlackHoleUA.html">UA</option>
+        <option value="BlackHole.html" selected>EN</option>
+    </select>
+
+    <div class="randomQuotes">
+        <input id="Text">
+        <button id ="randomQuotesButton" class="randomQuotesButton" onclick="randQ()">Random Quotes</button>
+    </div>
+
+    <div  class="test">
+        <form id="form">
+            <p class="Name">Name <input type="text" id="nameForm"></p>
+            <p class="Password"> Password <input type="password" name="pass" id="passForm"></p>
+            <p class="ShowPassword">Show Password<input type="checkbox" name="check" id="check"></p>
+            <p class="Phone">Phone <input type="number" name="phone_number" id="form_phone" value="380" size="12"></p>
+            <p class="formMail">Email <input type="email" name="email_form" id="form_mail"></p>
+            <p class="answer1"><b>Enter your favorite colors(Red)</b></p>
+            <p class="vote">
+                <input id="first_input" type="radio" name="answer">Red<Br>
+                <input type="radio" name="answer">Blue<Br>
+                <input type="radio" name="answer">Black<Br>
+                <br>
+                <b>How much 3 * 4?</b>
+            </p>
+            <input id="second_input" type="input">
+            </p>
+            <p><input id="submit" type="submit" value="Send"></p>
+            <p><input type="reset" value="Reset" id="reset"></p>
+        </form>
+        <form>
+            <textarea id="text_form" name="text" id="text" cols="30" rows="10"></textarea>
+            <p><input type="button" value="Send To Mail" id="sendMAIL"></p>
+        </form>   
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

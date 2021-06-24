@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="My site/photos/image.png" type="image/png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<title>Book store</title>
+	<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+</head>
+<body>
+	<header class="header">
+		<div class="conteiner">
+			<div class="nav">
+				<img src="photos/klipartz.com.png" alt="">
+				<ul class="menu">
+					<li><a href="main.html">Main page</a></li>
+					<li><a href="artist.html">Artist</a></li>
+					<li><a href="science.html">Science</a></li>
+					<li><a href="detectives.html">Detectives</a></li>
+					<li><a href="novel.html">Novel</a></li>
+					<li><a href="test.html">Test</a></li>
+				</ul>
+				<a href="tel:380501399483" class="tel">Call us!</a>
+			</div>
+			<div class="map">
+				<p>You can see the store on the map</p>
+				<a href="https://www.google.com.ua/maps/" class="button">GO TO MAP</a>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+		<div class="conteiner2">
+			<img id="photo" src="photos/300x300.jpeg" alt="" onmouseover="onImg()" onmouseout="noImg()">
+			<div class="javascript">
+				<input id="button1" type="button" value="Get Version">
+				<input id="firstInput" type="text" placeholder="Input value">
+				<input id="secondInput" type="text" placeholder="Input second value">
+				<input id="result" type="text" placeholder="Result" readonly>
+				</div>
+			<div class="arifmet">
+				<input id="dodavanie" type="button" value="+">
+				<input id="vidnimanie" type="button" value="-">
+				<input id="dilenie" type="button" value="/">
+				<input id="mnozhenya" type="button" value="*">
+			</div>
+			<div class="navi">
+				<ul class="spisok">
+					<li><p><input id="first" type="radio">First Image</p></li>
+					<li><p><input id="second" type="radio">Second Image</p></li>
+					<li><p><input id="three" type="radio">Third Image</p></li>
+					<li><p><input id="four" type="radio">Fourth Image</p></li>
+					<li><p><input id="five" type="radio">Fifth Image</p></li>
+					<input id="submit" type="submit" value="Sumbit">
+				</ul>
+				<input id="button2" type="button" value="Bookmark">
+			</div>
+			<p><select id="Select" class="Select" onchange="myFunction(value)">
+				<option selected value="historical.html">Change page</option>
+				<option value="science.html" >Scinece</option>
+				<option value="artist.html">Artist</option>
+				<option value="novel.html">Novel</o\ption>
+			</select>
+			</p>
+			<p class="Lang"><select id="Language" class="Language" onchange="Language(value)">
+				<option selected>Select language</option>
+				<option value="ua.html">UA</option>
+				<option value="ru.html">RU</option>
+			</select>
+			</p>
+			<div class="NEWS">
+			<p class="text-News">News </p><input id="News" type="text" class="News" readonly></p>
+			<input type="button" id="button3" value="Get News">
+			</div>
+			<div  class="test">
+					<form id="form">
+						<p class="Name">Name <input type="text" id="formName"></p>
+						<p class="Password"> Password <input type="password" name="pass" id="PASSWORD"></p>
+						<p class="ShowPassword">Show Password<input type="checkbox" name="check" id="check"></p>
+						<p class="Phone">Phone <input type="number" name="phone_number" id="form_phone" value="380" size="12"></p>
+						<p class="formMail">Email <input type="email" name="email_form" id="form_mail"></p>
+						<p class="answer1"><b>How to decrypt OC?</b></p>
+						<p class="vote">
+							<input id="first_input" type="radio" name="answer">Operating System<Br>
+							<input type="radio" name="answer">Operating Salary<Br>
+							<input type="radio" name="answer">Orange Scooter<Br>
+							<br>
+							<b>How much 2 + 3?</b>
+						</p>
+						<input id="second_input" type="input">
+						</p>
+						<p><input id="submit" type="submit" value="Send"></p>
+						<p><input type="reset" value="Reset" id="reset"></p>
+					</form>
+					<form>
+						<textarea id="text_form" name="text" id="text" cols="30" rows="10"></textarea>
+						<p><input type="button" value="Send To Mail" id="sendMAIL"></p>
+					</form>
+					<figure class="mp3"> 
+						<figcaption>Listen MP3 audio</figcaption>
+							<audio controls src="mp3/music.mp3">
+								Your browser does not support the
+								<code>audio</code> element.
+							</audio>
+					</figure>
+					<video controls width="400" height="300" class="videomp4">
+						<source src="video/boook.mp4" type="video/mp4">
+					</video>
+					<embed src="video/book.avi" width="240" height="180" autoplay="-l" showcontrols="1" type="application/x-oleobject" pluginspage="http://www.microsoft.com/netshow/download/player.htm">sraka</embed>
+			</div>
+			</div>
+			</body>
+		<script src="lab2.js"></script>
+		<script>
+			function onImg() {
+				photo.width = "500";
+			}
+			function noImg() {
+				photo.width = "300";
+			}
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Докуметн</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header_inner">
+                <div class="Space">Космос</div>
+
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a class="nav_link" href="MainPageUA.html">Головна Сторінка</a></li>
+                        <li><a class="nav_link" href="Comets.html">Комети</a></li>
+                        <li><a class="nav_link" href="Galaxy.html">Галактики</a></li>
+                        <li><a class="nav_link" href="SpaceShips.html">Космічні Кораблі</a></li>
+                        <li><a class="nav_link" href="Stars.html">Зірки</a></li>
+                    </ul>             
+                </nav>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="intro">
+        <div class="container">
+            <div class="intro_inner">
+                <h1 class="intro_title">Космічні Новини</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="Img">
+        <img id="fImg" onmouseover="setNewSize()"
+        onmouseout="setOldImage()" src="imeges/Black Hole/black-holes-infographic-v2.jpg" alt="">
+    </div>
+    <button id="Get">Отримати Версію</button>
+
+    <div class="radio">
+        <div>
+            <input type="radio" id="contactChoice1" name="contact" value="FirstImage">
+            <label for="contactChoice1">Перше Зображення</label>
+  
+            <input type="radio" id="contactChoice2" name="contact" value="SecondImage">
+            <label for="contactChoice2">Друге Зображення</label>
+  
+            <input type="radio" id="contactChoice3" name="contact" value="ThirdImage">
+            <label for="contactChoice3">Третє Зображення</label>
+  
+            <input type="radio" id="contactChoice4" name="contact" value="FourthImage">
+            <label for="contactChoice3">Четверте Зображення</label>
+  
+            <input type="radio" id="contactChoice5" name="contact" value="FifthImage">
+            <label for="contactChoice3">П'яте Зображення</label>
+          </div>
+          <div>
+            <button id="SubmitId" type="submit">Подати</button>
+          </div>
+    </div>
+      
+      <pre id="log">
+      </pre>
+
+      <div class="calculator">
+        <input id="num1" />
+        <div id="operator_btns">
+            <button id="plus" class="operator" onclick="op='+'">+</button>
+            <button id="minus" class="operator" onclick="op='-'">-</button>
+            <button id="times" class="operator" onclick="op='*'">x</button>
+            <button id="divide" class="operator" onclick="op='/'">:</button>
+          </div>
+          
+          <input id="num2" />
+          
+          <button onclick="func()">=</button>
+          
+          <p id="result"></p>
+      </div>
+
+      <select id="Select" class="Select" onchange="Select(value)">
+        <option value="MainPage.html" selected>Головна Сторінка</option>
+        <option value="Comets.html">Комети</option>
+        <option value="Galaxy.html">Галактики</option>
+        <option value="SpaceShips.html">Космічні Кораблі</option>
+        <option value="Stars.html">Зірки</option>
+    </select>
+
+    <select id="Language" class="Language" onchange="Language(value)">
+        <option value="BlackHoleUA.html"selected>UA</option>
+        <option value="BlackHole.html" >EN</option>
+    </select>
+
+    <script src="script.js"></script>
+</body>
+</html>
